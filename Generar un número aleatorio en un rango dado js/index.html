@@ -1,0 +1,13 @@
+html
+<!DOCTYPE html>
+<html>
+<body>
+  <h1>Generar un número aleatorio en un rango dado</h1>
+  <script>
+    function generarNumeroAleatorio(min, max) {
+      return Math.floor(Math.random() * (max - min + 1)) + min;
+    }
+    let resultado = generarNumeroAleatorio(1, 100);
+    document.write("El número aleatorio es: " + resultado);
+  </script>
+</body>
